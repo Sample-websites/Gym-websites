@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gym.css">
+    <title>Your Gym</title>
+</head>
+<body>
+
+   <header style="background-image: url('gym-background.jpg');">
+    <div class="header-content">
+        <h1>Your Gym</h1>
+        <p>Fitness for a Healthy Life</p>
+    </div>
+
+</header>
+<!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h2>Welcome to Your Gym</h2>
+        <p>Transform your body, Transform your life.</p>
+    </section>
+    
+<section class="about-us" id="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to our real estate platform. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo libero, nec elementum eros. Curabitur non ultrices ligula.</p>
+        <p>Our team is dedicated to helping you find your dream home. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo libero, nec elementum eros. Curabitur non ultrices ligula.</p>
+    </section>
+    <section id="classes">
+    <h2>Our Classes</h2>
+    <p>Check out our diverse range of fitness classes.</p>
+
+    <div class="class-container">
+        <div class="class">
+            <img src="yoga.jpg" alt="Yoga Class">
+            <h3>Yoga Class</h3>
+            <p>Relax your mind and body with our rejuvenating yoga classes.</p>
+        </div>
+
+        <div class="class">
+            <img src="spin.jpg" alt="Spinning Class">
+            <h3>Spinning Class</h3>
+            <p>Burn calories and boost your cardio with our high-energy spinning sessions.</p>
+        </div>
+
+        <div class="class">
+            <img src="crossfit.jpg" alt="CrossFit Class">
+            <h3>CrossFit Class</h3>
+            <p>Experience the intensity and camaraderie of our CrossFit training sessions.</p>
+        </div>
+
+        <div class="class">
+            <img src="yoga.jpg" alt="HIIT Class">
+            <h3>High-Intensity Interval Training Class</h3>
+            <p>Maximize your workout with our High-Intensity Interval Training (HIIT) class.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="membership">
+    <h2>Membership Plans</h2>
+    <p>Choose a plan that fits your fitness goals.</p>
+
+    <div class="membership-plans">
+        <div class="plan">
+            <h3>Standard Membership</h3>
+            <p>Access to all classes and gym facilities.</p>
+            <p>Monthly Fee: $50</p>
+        </div>
+
+        <div class="plan">
+            <h3>Premium Membership</h3>
+            <p>Includes personal training sessions and exclusive classes.</p>
+            <p>Monthly Fee: $80</p>
+        </div>
+
+        <div class="plan">
+            <h3>Family Membership</h3>
+            <p>Discounted rates for families, includes child-friendly classes.</p>
+            <p>Monthly Fee: $120</p>
+        </div>
+
+        <!-- Add any additional plans here -->
+    </div>
+
+    <p>Join now and kickstart your fitness journey with us!</p>
+    
+    <!-- <div class="membership-form">
+        <label for="selected-membership">Select your membership:</label>
+        <select id="selected-membership" name="selected-membership">
+            <option value="standard">Standard Membership</option>
+            <option value="premium">Premium Membership</option>
+            <option value="family">Family Membership</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </div> -->
+    <a href="membership.html"><button type="button">View Membership Options</button></a>
+</section>
+</section>
+
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to schedule an appointment? Reach out to us.</p>
+
+    <div class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <label class="email-label" for="email">Email Address:</label>
+    <input class="email-input" type="email" id="remail" placeholder="Enter your email">
+
+    <label class="review-label" for="review">Review:</label>
+    <input class="review-input" type="text" id="review" placeholder="Write your review">
+
+    <button onclick="displayReview()" class="submit-review">Submit Review</button>
+        
+
+
+    <div id="output" class="review-container"></div>
+</section>
+
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@yourgym.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Fitness Street, Cityville</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Stay connected on social media:</p>
+            <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="footer-bottom">&copy; 2023 Your Gym. All rights reserved.</p>
+    <p>Designed by Hasib Developers</p>
+</footer>
+
+    <script src="Gym.js"></script>
+</body>
+</html>
+ 

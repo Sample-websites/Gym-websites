@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Real Estate Website</title>
+    <style>/* Add this code to your existing CSS file (styles.css) */
+
+.property {
+    position: relative;
+    overflow: hidden;
+    margin: 1em;
+    width: 300px;
+}
+
+.property img {
+    max-width: 100%;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 1; /* Set opacity to 1 to make it visible by default */
+}
+
+.overlay h2, .overlay p {
+    margin: 0;
+}
+
+.property a {
+    display: block;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Estate Listings</h1>
+    </header>
+
+    <!-- Your property listings with random images and numbers -->
+    <section id="listings">
+        <!-- Listing 1 -->
+<!-- Add this code within the body of your HTML file, inside the propertyElement div -->
+<!-- Add this code within the body of your HTML file, inside the propertyElement div -->
+<div class="property">
+    <a href="property1.html">
+        <img src="condo1.jpg" alt="Random Property 1">
+        <div class="overlay">
+            <h2>Listing #1</h2>
+            <p>Price: $500,000</p>
+        </div>
+    </a>
+</div>
+
+
+        <!-- Add more listings as needed -->
+    </section>
+
+    <!-- Your existing content -->
+
+    <footer>
+        <div class="footer-content">
+            <!-- Footer content as before -->
+        </div>
+
+        <p class="copyright">&copy; 2023 Your Real Estate Company</p>
+    </footer>
+
+    <script>
+        
+        // Your existing JavaScript code
+// Your existing JavaScript code
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Sample property data with random images and numbers
+    const listingsSection = document.getElementById("categories");
+
+    for (let i = 1; i <= 5; i++) {
+        const propertyElement = document.createElement("div");
+        propertyElement.classList.add("property");
+        propertyElement.innerHTML = `
+            <a href="property${i}.html">
+                <img src="${getRandomImageName()}" alt="Random Property ${i}">
+                <div class="overlay">
+                    <h2>Listing #${i}</h2>
+                    <p>Price: $${Math.floor(Math.random() * 900000) + 100000}</p>
+                </div>
+            </a>
+        `;
+        listingsSection.appendChild(propertyElement);
+    }
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Membership</title>
+    <link rel="stylesheet" href="membership.css"> <!-- Link to your main styles.css file -->
+</head>
+<body>
+
+<header>
+    <!-- Your header content goes here -->
+</header>
+
+<nav>
+    <a href="index.html">Go Back to Home</a>
+</nav>
+
+<section id="choose-membership">
+    <h2>Choose Your Membership</h2>
+
+    <div class="membership-form">
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="selected-membership">Select Membership:</label>
+            <select id="selected-membership" name="selected-membership">
+                <option value="standard">Standard Membership</option>
+                <option value="premium">Premium Membership</option>
+                <option value="family">Family Membership</option>
+            </select>
+
+            <button type="button" onclick="selectMembership()">Choose Membership</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <!-- Your footer content goes here -->
+</footer>
+
+<script src="membership.js"></script>
+
+</body>
+</html>

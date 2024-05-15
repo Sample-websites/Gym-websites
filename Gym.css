@@ -1,0 +1,444 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+header {
+    text-align: center;
+    color: #fff;
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+#hero {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+#classes, #membership, #contact {
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#classes {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#classes h2 {
+    color: #333;
+}
+
+#classes p {
+    color: #555;
+}
+
+.class-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.class {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.class:hover {
+    transform: scale(1.05);
+}
+
+.class img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.class h3 {
+    color: #333;
+}
+
+.class p {
+    color: #555;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+.hamburger {
+    display: none;
+    position: absolute;
+    left: 1em;
+    top: 20em;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #009DFF;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 1em; 
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Add this style to make the navigation responsive */
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin: 1em 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+#classes {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#classes h2 {
+    color: #333;
+}
+
+#classes p {
+    color: #555;
+}
+
+.class-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    margin-top: 20px;
+}
+
+.class {
+    width: 30%;
+    margin-bottom: 20px; /* Added margin between rows */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.class:hover {
+    transform: scale(1.05);
+}
+
+.class img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.class h3 {
+    color: #333;
+}
+
+.class p {
+    color: #555;
+}
+#membership {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#membership h2 {
+    color: #333;
+}
+
+#membership p {
+    color: #555;
+}
+
+.membership-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow plans to wrap onto the next line */
+    margin-top: 20px;
+}
+
+.plan {
+    width: 30%;
+    margin-bottom: 20px; /* Added margin between rows */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    color: #333;
+}
+
+.plan p {
+    color: #555;
+}
+
+#membership p:last-child {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+input[type="radio"] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#membership p:last-child {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.membership-form {
+    margin-top: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section p, .footer-section ul {
+    color: #ccc;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    color: #ccc;
+}
+#contact {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #1E006D; /* Updated to black */
+    padding: 10px;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    color: white;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.email-label, .review-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+        }
+.email-input, .review-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+        }
+
+.submit-review {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+        }
+
+.review-container {
+    margin-top: 20px;
+        }
+
+.review {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+        }
+
+.review strong {
+color: #333;
+        } 
+        
+.about-us {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f4f4f4;
+}
+
+.about-us h2 {
+    color: #333;
+    text-align: center;
+}
+
+.about-us p {
+    color: #666;
+    line-height: 1.6;
+}
